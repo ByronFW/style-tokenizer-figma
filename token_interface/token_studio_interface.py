@@ -181,20 +181,22 @@ class DropShadow(_Token):
     A token representing drop shadow settings for use in Tokens Studio.
 
     Attributes:
-        color (str): The color of the drop shadow.
+        color (str|color): The color of the drop shadow.
         x (int): The horizontal offset of the shadow.
         y (int): The vertical offset of the shadow.
         blur (int): The blur radius of the shadow.
         spread (int): The spread radius of the shadow.
     """
 
-    color: str
+    color: str|Color
     x: int
     y: int
     blur: int
     spread: int
 
     def __post_init__(self):
+        if isinstance(self.color, Color):
+            self.color = self.color.hex_code
         validate_hex_color(self.color)
 
     def __prepare_dict__(self) -> dict[str, Any]:
@@ -379,7 +381,7 @@ class _CollectionMeta(type):
 
         return {"global": iterate_styles(cls)}
 
-    def export(self, file_path: str, preview: bool = True):
+    def export(self, file_path: str, preview: bool = True) -> None:
         """ if file_path is None:
             from datetime import datetime
 
