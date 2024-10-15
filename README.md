@@ -24,10 +24,11 @@ This Python package is designed to help generate and manage design tokens for Fi
 ### 2. Parse the Material Theme JSON
 
 ```python
-import material_theme_interface as mt
-THEME_JSON = 'path/to/material-theme.json'
-theme = mt.parse(THEME_JSON)
+from token_interface import *
+THEME_JSON = 'material-theme-default.json'
+theme = parse_material(THEME_JSON)
 light_scheme = theme['schemes']['light']
+print(light_scheme)
 ```
 
 This allows you to work with typed dictionaries representing the color schemes, palettes, and other theme data.
@@ -399,7 +400,7 @@ In this example, we import the light color scheme from an m3 Json export:
 
 ```python
 from token_interface import *
-MATERIAL = parse_material("material_theme_exports/material-theme-default.json")
+MATERIAL = parse_material("path-to-material.json") # path to your material export json
 LIGHT_THEME = MATERIAL["schemes"]["light"]
 DEFAULT_FONT = "Roboto"
 class M3Styles(TokenCollection):
