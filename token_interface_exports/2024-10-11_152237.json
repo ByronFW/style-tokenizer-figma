@@ -1,0 +1,61 @@
+{
+    "global": {
+        "label": {
+            "large": {
+                "value": {
+                    "fontFamily": "Roboto",
+                    "fontSize": "24",
+                    "fontWeight": "Regular",
+                    "lineHeight": "auto",
+                    "letterSpacing": "0",
+                    "paragraphSpacing": "0",
+                    "paragraphIndent": "0",
+                    "textCase": "none",
+                    "textDecoration": "none"
+                },
+                "type": "typography",
+                "description": "used wherever"
+            },
+            "small": {
+                "value": {
+                    "fontFamily": "Roboto",
+                    "fontSize": "12",
+                    "fontWeight": "Regular",
+                    "lineHeight": "auto",
+                    "letterSpacing": "0",
+                    "paragraphSpacing": "0",
+                    "paragraphIndent": "0",
+                    "textCase": "none",
+                    "textDecoration": "none"
+                },
+                "type": "typography",
+                "description": "used wherever"
+            }
+        },
+        "elevation1": {
+            "value": [
+                {
+                    "color": "#0000004d",
+                    "x": 0,
+                    "y": 4,
+                    "blur": 4,
+                    "spread": 0,
+                    "type": "dropShadow"
+                },
+                {
+                    "color": "#00000026",
+                    "x": 0,
+                    "y": 4,
+                    "blur": 4,
+                    "spread": 0,
+                    "type": "dropShadow"
+                }
+            ],
+            "type": "boxShadow"
+        },
+        "primary_container": {
+            "value": "#c1efaf",
+            "type": "color"
+        }
+    }
+}
