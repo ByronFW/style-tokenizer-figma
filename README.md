@@ -34,10 +34,10 @@ This allows you to work with typed dictionaries representing the color schemes, 
 
 ### 3. Define and Export Tokens for Figma
 
-You can use the TokenCollection class from the token_studio_interface.py module to define and export tokens for use in Figma.
+You can use the TokenCollection class from the token_interface.py module to define and export tokens for use in Figma.
 
 ```python
-from token_studio_interface import TokenCollection, Color, Typography,DropShadow
+from token_interface import TokenCollection, Color, Typography,DropShadow
 DEFAULT_FONT = "Roboto"
 class MyTokens(TokenCollection):
     black = Color("#000000")
