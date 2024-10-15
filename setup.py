@@ -6,7 +6,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="style-tokenizer-figma",  # Module name
-    version="1.0.0",
+    version="1.0.1",
     author="Byron",
     author_email="byronforrestwhite@outlook.com",
     description="A Python package for generating and managing design tokens for Figma, with Material Theme Builder integration and Tokens Studio plugin support.",  # Short description
