@@ -11,7 +11,7 @@ This Python package is designed to help generate and manage design tokens for Fi
 
 ## Installation
 
-`pip install style-tokenizer-figma`
+`pip install tokenizer-figma`
 
 ## Usage
 
